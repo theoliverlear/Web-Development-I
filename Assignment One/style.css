@@ -1,0 +1,247 @@
+/*
+Oliver Sigwarth
+CIDS 225
+Assignment One | HTML Showcase
+ * In this project, you will create a webpage using HTML to showcase items
+ * that hold personal meaning to you. Each item will be accompanied by a
+ * picture and a description, allowing you to express the significance and
+ * stories behind them.
+Created: 6/6/2023
+Last Modified: 6/8/2023
+ */
+/*-------------General-Content-------------*/
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin-top: 7.5vh;
+    font-family: "Roboto Light", serif;
+    background-color: #ffdbdb;
+}
+img {
+    -webkit-user-drag: none;
+}
+/*----------------Nav-Bar------------------*/
+#nav-bar {
+    width: 100%;
+    height: 7.5vh;
+    background-color: #7a3131;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    box-shadow: 0 0.25em 0.5em #252424;
+    text-shadow: 0 0 1px #252424;
+    overflow: hidden;
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-text{
+    width: 12%;
+    text-align: center;
+    margin-top: -1vh;
+    border: antiquewhite 0.1em solid;
+    padding: 0 1em;
+    border-radius: 50em;
+    box-shadow: 0 0.25em 0.5em #252424;
+    overflow: hidden;
+
+}
+.nav-link {
+    text-decoration: none;
+    color: #ffdbdb;
+}
+a:hover {
+    color: #750609;
+}
+a:active {
+    color: #000000;
+}
+#logo {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    margin-top: -0.5em;
+    margin-left: -2.5em;
+    box-shadow: 0 0.25em 0.25em #252424;
+}
+/*-----------------Titles-----------------*/
+#top-hr {
+    width: 100%;
+    margin: 5em 0 0 0;
+    border: #252424 0.1em solid;
+    border-radius: 50em;
+    box-shadow: 0 0.25em 0.5em #252424;
+}
+#meaning-title {
+    width: 85vw;
+    align-items: center;
+    text-align: center;
+    text-shadow: 0 0.1em 0.5em #135665;
+    color: #252424;
+    border: #7a3131 0.1em solid;
+    border-radius: 50em;
+    box-shadow: 0 0.25em 0.5em #252424;
+    padding: 0.35em;
+}
+#name-title {
+    font-size: 5rem;
+    font-weight: 900;
+    color: #252424;
+    text-shadow: 0 0.1em 0.5em #7a3131;
+    text-align: center;
+    margin-top: 9vh;
+    margin-bottom: -5vh;
+    padding-bottom: 0;
+    letter-spacing: 0.35em;
+}
+/*-------------Text-Content----------------*/
+h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.1rem 0.5rem;
+}
+/*------------Item-Containers--------------*/
+.left {
+    float: left;
+    width: 50%;
+}
+.right {
+    float: right;
+    width: 50%;
+}
+#wedding-rings-div {
+    float: right;
+}
+.wedding-rings-img {
+    width: 45%;
+    border-radius: 1em;
+}
+.painting-img {
+    width: 45%;
+    border-radius: 1em;
+}
+#painting-div {
+    float: left;
+}
+#computer-div {
+    display: block;
+}
+.pc-img {
+    width: 45%;
+    border-radius: 1em;
+}
+.item-heading {
+    padding: 0;
+    margin: 0.35em 0;
+    text-align: center;
+}
+.item-hr {
+    width: 90%;
+    margin: 0 0 0 1.5em;
+    border: #252424 0.1em solid;
+    border-radius: 50em;
+    box-shadow: 0 0.25em 0.5em #252424;
+}
+/*-----------------Footer------------------*/
+#to-the-top-arrow {
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: auto;
+}
+#to-the-top-arrow:hover {
+    cursor: pointer;
+}
+/*-----------------Sizing------------------*/
+@media screen and (min-height: 1100px)
+              and (max-height: 1300px) {
+    body {
+        margin-top: 9.5vh;
+    }
+    #nav-bar {
+        height: 9.5vh;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (min-height: 900px)
+              and (max-height: 1100px) {
+    body {
+        margin-top: 11.5vh;
+    }
+    #nav-bar {
+        height: 11.5vh;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+}
+@media screen and (min-height: 700px)
+              and (max-height: 900px) {
+    body {
+        margin-top: 17vh;
+    }
+    #nav-bar {
+        height: 17vh;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-height: 700px)
+              and (min-height: 425px) {
+    body {
+        margin-top: 18vh;
+    }
+    #nav-bar {
+        height: 18vh;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-height: 425px) {
+    body {
+        margin-top: 30vh;
+    }
+    #nav-bar {
+        height: 30vh;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 950px) {
+    .wedding-rings-img,
+    .pc-img,
+    .painting-img {
+        display: block;
+        width: 100%;
+        margin: 0.5em auto;
+    }
+}

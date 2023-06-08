@@ -1,0 +1,190 @@
+<!----------------------------------------------------------------------------
+Oliver Sigwarth
+CIDS 225
+Assignment One | HTML Showcase
+ * In this project, you will create a webpage using HTML to showcase items
+ * that hold personal meaning to you. Each item will be accompanied by a
+ * picture and a description, allowing you to express the significance and
+ * stories behind them.
+Created: 6/6/2023
+Last Modified: 6/8/2023
+----------------------------------------------------------------------------->
+<!-- This site will be about meaningful items in my life -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment One | HTML Showcase</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <!---------------------------------Favicons-------------------------------->
+  <!-- Favicons generated using favicon.io -->
+  <!-- Logo is my personal logo -->
+  <link rel="apple-touch-icon" sizes="180x180"
+           href="favicon/apple-touch-icon.png">
+
+  <link rel="icon" type="image/png" sizes="512x512"
+          href="favicon/android-chrome-512x512.png">
+
+  <link rel="icon" type="image/png" sizes="192x192"
+          href="favicon/android-chrome-192x192.png">
+
+  <link rel="icon" type="image/png" sizes="32x32"
+                 href="favicon/favicon-32x32.png">
+
+  <link rel="icon" type="image/png" sizes="16x16"
+                 href="favicon/favicon-16x16.png">
+
+  <link rel="icon" type="image/x-icon" sizes="16x16"
+                          href="favicon/favicon.ico">
+</head>
+<body>
+
+<!---------------------------------Nav-Bar----------------------------------->
+<nav id="nav-bar">
+  <ul>
+    <!-- Logo -->
+    <li>
+      <a target="_blank" href="https://github.com/theoliverlear">
+        <img id="logo" src="favicon/android-chrome-192x192.png" alt="Logo"
+                                    title="@theoliverlear - opens new tab">
+      </a>
+    </li>
+
+    <!-- Wedding Rings -->
+    <li class="nav-text" id="highest-point">
+      <h3><a href="#wedding-rings-div" class="nav-link">Wedding Rings</a></h3>
+    </li>
+
+    <!-- Painting -->
+    <li class="nav-text" ><h3>
+      <a  href="#painting-div" class="nav-link" >Painting</a></h3>
+    </li>
+
+    <!-- Library -->
+    <li class="nav-text" >
+      <h3><a class="nav-link">Library</a></h3>
+    </li>
+
+    <!-- Computer -->
+    <li class="nav-text" >
+      <h3><a href="#computer-div" class="nav-link">Computer</a></h3>
+    </li>
+
+    <!-- Piano -->
+    <li class="nav-text" >
+      <h3><a class="nav-link">Piano</a></h3>
+    </li>
+
+  </ul>
+</nav>
+<h1 id="name-title"><em>Oliver Lear Sigwarth</em></h1>
+<hr id="top-hr" />
+
+<h1 id="meaning-title">Meaningful Items</h1>
+
+<!-------------------------------Wedding-Rings------------------------------->
+<div id="wedding-rings-div">
+  <div class="left">
+    <h2 class="item-heading">Wedding Rings</h2>
+    <hr class="item-hr" />
+    <p>
+      The ring I wear everyday is my wedding ring. I am engadged to my fiance,
+      David, who I met at UWRF. For insurance reasons, we aren't married yet,
+      but we were married from the first moment we met. I love him, he is my
+      world, and best friend. I am so excited to spend the rest of my life
+      with him. The ring I wear is a simple band with the engraving
+      "<dfn title="a whole that is greater than the sum of its parts">
+        Gestalt
+      </dfn>"
+      on the inside. It means "a whole that is greater than the sum of its
+      parts". Click
+      <a href="https://www.instagram.com/p/CByPwO5gEAN/" target="_blank"
+         title="(New Tab) Instagram Post">
+        here
+      </a> to see more about me and David.
+    </p>
+  </div>
+  <div class="right">
+    <img class="wedding-rings-img" src="images/wedding_rings.JPG"
+                                              alt="Wedding Rings">
+    <img class="wedding-rings-img" src="images/ring_engraving.jpeg"
+                                       alt="Wedding Ring Engraving">
+  </div>
+</div>
+<!--------------------------------Library------------------------------------>
+<!-- Talk about development team -->
+<!--------------------------------Painting----------------------------------->
+<div id="painting-div">
+  <div class="left">
+    <h2 class="item-heading">Painting</h2>
+    <hr class="item-hr" />
+    <p>
+      A painting which I will always hang on my wall is a painting of a an
+      album cover from the
+      <a target="_blank" href="https://soundcloud.com/theoliverlear"
+         title="(New Tab) SoundCloud">music I made.</a>
+      It was called "Hand-Me-Downs" and
+      this painting reminds me of what everyone in my life did to help me
+      through a difficult time. To not be specific, the trauma of my childhood
+      made me very unwell. I was relentlessly bullied until I left my school
+      junior year of high school. My one real friend, who I had known since I
+      was 6, was the only person who would talk to me. I was so lonely and
+      depressed. Over the course of these years, we would play tennis together
+      and watch movies. He's an introvert and I'm an extrovert, so I knew that
+      when said yes to hanging out, that it was a big deal. I was so grateful
+      for him. So this painting by my sister, who is a shy painter but said
+      yes to painting for me, reminds me of the people who were there for me
+      when I needed them most.
+    </p>
+  </div>
+  <div class="right">
+    <img class="painting-img" src="images/painting.jpeg" alt="Painting">
+    <img class="painting-img" src="images/friend_photo.JPG"
+                              alt="Me and my friend Oliver">
+  </div>
+</div>
+<!--------------------------------Computer----------------------------------->
+<div id="computer-div">
+  <div class="left">
+    <h2 class="item-heading">Computer</h2>
+    <hr class="item-hr" />
+    <p>
+      As a developer, something meaningful to me is my computer.
+      I ended up being able to afford it after trading cryptocurrencies
+      in early 2021. In summer of 2021, I fully assembled my computer — which
+      had all the items I'd hoped for. It is a self-built computer and it was
+      initially intended for editing audio as my current job was working as an
+      audio engineer. I also used to to
+      <a target="_blank"
+           href="https://soundcloud.com/theoliverlear"
+           title="(New Tab) SoundCloud">produce my own music
+      </a>.
+      with the computer. I have since moved on to software development and I
+      use it for that now. I am very proud of my computer and the things I can
+      do with it. I'll never forget the
+      <a href="https://www.codecademy.com/profiles/theoliverlear/certificates/
+               d3f89367b558583e361640f778191345"
+         target="_blank" title="(New Tab) First Class Certificate">
+        first Codecademy class
+      </a>
+      I completed with it. I was so excited to
+        be learning something new and I'm so grateful and lucky that I had a
+      computer to do it on. My computer is a manifestation of my personality
+      where I can create and learn new things by myself — on my own accord.
+    </p>
+  </div>
+  <div class="right">
+    <img class="pc-img" src="images/pc_profile.jpeg" alt="PC Profile">
+    <img class="pc-img" src="images/pc_close_up.jpeg" alt="PC Close Up">
+  </div>
+</div>
+<!--------------------------------Piano-------------------------------------->
+
+<hr class="item-hr" />
+<a href="#name-title">
+  <img id="to-the-top-arrow" src="images/arrow.png" alt="To The Top">
+</a>
+
+</body>
+</html>
