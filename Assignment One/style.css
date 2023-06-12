@@ -7,7 +7,7 @@ Assignment One | HTML Showcase
  * picture and a description, allowing you to express the significance and
  * stories behind them.
 Created: 6/6/2023
-Last Modified: 6/8/2023
+Last Modified: 6/9/2023
  */
 /*-------------General-Content-------------*/
 html {
@@ -41,7 +41,7 @@ ul {
     justify-content: space-around;
     align-items: center;
 }
-.nav-text{
+.nav-text {
     width: 12%;
     text-align: center;
     margin-top: -1vh;
@@ -73,13 +73,14 @@ a:active {
 /*-----------------Titles-----------------*/
 #top-hr {
     width: 100%;
-    margin: 5em 0 0 0;
+    margin: 5.5vh 0 0 0;
     border: #252424 0.1em solid;
     border-radius: 50em;
     box-shadow: 0 0.25em 0.5em #252424;
 }
 #meaning-title {
-    width: 85vw;
+    width: 90vw;
+    margin-left: 2vw;
     align-items: center;
     text-align: center;
     text-shadow: 0 0.1em 0.5em #135665;
@@ -88,6 +89,7 @@ a:active {
     border-radius: 50em;
     box-shadow: 0 0.25em 0.5em #252424;
     padding: 0.35em;
+
 }
 #name-title {
     font-size: 5rem;
@@ -129,6 +131,7 @@ p {
 .right {
     float: right;
     width: 50%;
+
 }
 #wedding-rings-div {
     float: right;
@@ -136,13 +139,39 @@ p {
 .wedding-rings-img {
     width: 45%;
     border-radius: 1em;
+    margin: 0.18em;
 }
 .painting-img {
     width: 45%;
     border-radius: 1em;
+    margin: 0.18em;
 }
 #painting-div {
-    float: left;
+    float: right;
+}
+#library-div {
+    float: right;
+}
+.library-img {
+    width: 45%;
+    border-radius: 1em;
+    margin: 0.18em;
+    /*box-shadow: 0.5em 0.5em 0.5em #252424;*/
+}
+#slideshow-arrow {
+    border-radius: 100em;
+    box-shadow: 0.5em 0.5em 1em #252424;
+    transition: box-shadow 0.35s;
+    width: 45%;
+    margin-bottom: 4em;
+}
+#slideshow-arrow:hover {
+    cursor: pointer;
+    box-shadow: 0.5em 0.5em 1em #7a3131;
+    transition: box-shadow 0.35s;
+}
+#slideshow-arrow:not(:hover) {
+    box-shadow: 0.5em 0.5em 1em #252424;
 }
 #computer-div {
     display: block;
@@ -150,6 +179,7 @@ p {
 .pc-img {
     width: 45%;
     border-radius: 1em;
+    margin: 0.18em;
 }
 .item-heading {
     padding: 0;
@@ -163,21 +193,46 @@ p {
     border-radius: 50em;
     box-shadow: 0 0.25em 0.5em #252424;
 }
+.library-hr {
+    width: 80%;
+    margin: 0 0 0 0;
+    border: #252424 0.1em solid;
+    border-radius: 50em;
+    box-shadow: 0 0.25em 0.5em #252424;
+}
+#security-items-div {
+    float: left;
+}
+.security-img {
+    width: 45%;
+    border-radius: 1em;
+    margin: 0.18em;
+}
 /*-----------------Footer------------------*/
 #to-the-top-arrow {
     height: 100px;
     width: 100px;
-    position: fixed;
     bottom: 0;
     right: 0;
     z-index: auto;
+    position: fixed;
+    /*border-radius: 100em;*/
+    /*box-shadow: 0.5em 0.5em 1em #252424;*/
+    border-radius: 100em;
+    box-shadow: 0.5em 0.5em 1em #252424;
+    transition: box-shadow 0.35s;
 }
 #to-the-top-arrow:hover {
     cursor: pointer;
+    box-shadow: 0.5em 0.5em 1em #7a3131;
+    transition: box-shadow 0.35s;
+}
+#to-the-top-arrow:not(:hover) {
+    box-shadow: 0.5em 0.5em 1em #252424;
 }
 /*-----------------Sizing------------------*/
 @media screen and (min-height: 1100px)
-              and (max-height: 1300px) {
+and (max-height: 1300px) {
     body {
         margin-top: 9.5vh;
     }
@@ -189,7 +244,7 @@ p {
     }
 }
 @media screen and (min-height: 900px)
-              and (max-height: 1100px) {
+and (max-height: 1100px) {
     body {
         margin-top: 11.5vh;
     }
@@ -201,7 +256,7 @@ p {
     }
 }
 @media screen and (min-height: 700px)
-              and (max-height: 900px) {
+and (max-height: 900px) {
     body {
         margin-top: 17vh;
     }
@@ -214,7 +269,7 @@ p {
 }
 
 @media screen and (max-height: 700px)
-              and (min-height: 425px) {
+and (min-height: 425px) {
     body {
         margin-top: 18vh;
     }
@@ -239,9 +294,16 @@ p {
 @media screen and (max-width: 950px) {
     .wedding-rings-img,
     .pc-img,
-    .painting-img {
+    .painting-img,
+    .library-img,
+    .security-img {
         display: block;
         width: 100%;
         margin: 0.5em auto;
+    }
+    #slideshow-arrow {
+        width: 80%;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
 }
