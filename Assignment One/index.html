@@ -1,15 +1,14 @@
 <!----------------------------------------------------------------------------
-Oliver Sigwarth
-CIDS 225
-Assignment One | HTML Showcase
- * In this project, you will create a webpage using HTML to showcase items
- * that hold personal meaning to you. Each item will be accompanied by a
- * picture and a description, allowing you to express the significance and
- * stories behind them.
-Created: 6/6/2023
-Last Modified: 6/9/2023
+| Oliver Sigwarth                                                            |
+| CIDS 225 - Web Development I                                               |
+| Assignment One | HTML Showcase                                             |
+| * In this project, you will create a webpage using HTML to showcase items  |
+| * that hold personal meaning to you. Each item will be accompanied by a    |
+| * picture and a description, allowing you to express the significance and  |
+| * stories behind them.                                                     |
+| Created: 6/6/2023                                                          |
+| Last Modified: 6/12/2023                                                   |
 ----------------------------------------------------------------------------->
-<!-- This site will be about meaningful items in my life -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -62,17 +61,18 @@ Last Modified: 6/9/2023
 
     <!-- Library -->
     <li class="nav-text" >
-      <h3><a class="nav-link">Library</a></h3>
+      <h3><a href="#library-div" class="nav-link">Library</a></h3>
     </li>
 
     <!-- Computer -->
     <li class="nav-text" >
-      <h3><a href="#computer-div" class="nav-link">Computer</a></h3>
+      <h3><a href="#computer-div-click" class="nav-link">Computer</a></h3>
     </li>
 
     <!-- Piano -->
     <li class="nav-text" >
-      <h3><a class="nav-link">Security Items</a></h3>
+      <h3><a href="#security-items-div"
+             class="nav-link">Security Items</a></h3>
     </li>
 
   </ul>
@@ -87,18 +87,19 @@ Last Modified: 6/9/2023
     <h2 class="item-heading">Wedding Rings</h2>
     <hr class="item-hr" />
     <p>
-      The ring I wear everyday is my wedding ring. I am engadged to my fiancé,
-      David, who I met at UWRF. He is a psychology major and he works as a
-      Behavioral Specialist at Rogers Behavioral Health in Woodbury, MN. He is
-      the most kind and loving person I have ever met. He uses that love and
-      kindness every day help kids, ages 13-18, deal with their depression,
+      The ring I am proud to wear everyday is my wedding ring. I am engadged
+      to my fiancé, David, who I met at UWRF. He is a psychology major and he
+      works as a Behavioral Specialist at Rogers Behavioral Health in Woodbury
+      , MN. He is the most kind and loving person I have ever met. He uses
+      that love and kindness every day help kids, ages 13-18, deal with their
+      depression,
       <abbr title="Obsessive Compulsive Disorder">
         OCD
       </abbr>
-      , and trauma. For insurance reasons, we aren't married yet,
-      but we were married from the first moment we met. I love him, he is my
-      world, and best friend. I am so excited to spend the rest of my life
-      with him. The ring I wear is a simple band with the engraving
+      , and trauma. For insurance reasons, we a */ren't married yet,
+      but we were married at heart from the first moment we met. I love him,
+      he is my world, and best friend. I am so excited to spend the rest of my
+      life with him. The ring I wear is a simple band with the engraving
       "<dfn title="a whole that is greater than the sum of its parts">
         Gestalt
       </dfn>"
@@ -186,7 +187,7 @@ Last Modified: 6/9/2023
   </div>
   <div class="right">
     <img class="library-img" id="slideshow-image"
-         src="images/library/java.JPEG"
+         src="images/library/java.jpeg"
          alt="Books" title="06/09/2023 - Book Collection">
     <img class="library-img" id="slideshow-arrow"
          src="images/arrows/arrow_right.png"
@@ -195,7 +196,7 @@ Last Modified: 6/9/2023
 </div>
 <!--------------------------------Computer----------------------------------->
 <div id="computer-div">
-  <div class="left">
+  <div id="computer-div-click" class="left">
     <h2 class="item-heading">Computer</h2>
     <hr class="item-hr" />
     <p>
@@ -245,12 +246,12 @@ Last Modified: 6/9/2023
       across a file that ended up being malicious. It started with my computer
       being hacked and spread to any other device I had on my network. 
       Accounts associated with me were hacked. I was devastated and felt
-      powerless — nothing prepared me for this. Only those who have been hacked
-      know how scary it is. Bank accounts, social media, private messages, and
-      more were all exposed. My phone calls would be redirected, my texts 
-      would be read, and my computer I worked so hard to afford was now a tool 
-      for the hacker — mostly to mine cryptocurrency. I was scared and it took 
-      me awhile to accept the fact that I could not solve it with 
+      powerless — nothing prepared me for this. Only those who have been
+      hacked know how scary it is. Bank accounts, social media, private
+      messages, and more were all exposed. My phone calls would be redirected,
+      my texts would be read, and my computer I worked so hard to afford was
+      now a tool for the hacker — mostly to mine cryptocurrency. I was scared
+      and it took me awhile to accept the fact that I could not solve it with
       half-measures. After months, I had to wipe my computer, phone, laptop,
       anything that was connected to my initial infiltration. This was
       particularly difficult because I had to wipe my computer which held all
@@ -258,7 +259,13 @@ Last Modified: 6/9/2023
       This was a very difficult time and realizing time for me. I learned a
       lot about the technology field. It, along with the devastation of my 
       music library, that was the catalyst for me to switch my life path from
-      music to technology. I am grateful for the experience and I am grateful 
+      music to technology.
+      <span class="show-text" id="show-more">
+        Show more
+      </span>
+    </p>
+    <p class="hidden-text">
+      I am grateful for the experience and I am grateful
       for the lessons I learned. The items shown are the pieces of technology
       which gave me my life back after a months' long battle with the hacker.
       The first is a
@@ -277,6 +284,9 @@ Last Modified: 6/9/2023
       has given me. These items are a daily reminder of one of the most
       important events of my life and how responding to situations with
       full-measures can be painful, but a necessary pain to solve a problem.
+      <span  class="show-text hidden-text" id="show-less">
+        Show less...
+      </span>
     </p>
   </div>
     <div class="right">
@@ -285,6 +295,7 @@ Last Modified: 6/9/2023
         <img class="security-img"
              src="images/security_items/modem_router.jpeg"
              alt="Router" title="06/10/2023 - Left: Modem - Right: Router">
+    </div>
 </div>
 
 <hr class="item-hr" />
