@@ -9,7 +9,7 @@ Assignment One | HTML Showcase                 |
  * allowing you to express the significance    |
  * and stories behind them.                    |
 Created: 6/6/2023                              |
-Last Modified: 6/12/2023                       |
+Last Modified: 6/16/2023                       |
 ==============================================*/
 
 /*---------------General-Content--------------*/
@@ -23,6 +23,14 @@ body {
 }
 img {
     -webkit-user-drag: none;
+}
+img:hover {
+    box-shadow: 0 0.25em 0.5em #561807;
+    transition: 0.5s;
+}
+img:not(:hover) {
+    box-shadow: 0 0.25em 0.5em #135665;
+    transition: 0.5s;
 }
 /*------------------Nav-Bar-------------------*/
 #nav-bar {
@@ -53,7 +61,6 @@ ul {
     border-radius: 50em;
     box-shadow: 0 0.25em 0.5em #252424;
     overflow: hidden;
-
 }
 .nav-link {
     text-decoration: none;
@@ -80,6 +87,15 @@ a:active {
     border: #252424 0.1em solid;
     border-radius: 50em;
     box-shadow: 0 0.25em 0.5em #252424;
+}
+#purpose-title {
+    font-size: 3.5rem;
+    font-weight: 200;
+    color: #252424;
+    text-shadow: 0 0.1em 0.5em #7a3131;
+    text-align: center;
+    padding-bottom: 0;
+    letter-spacing: 0.45em;
 }
 #meaning-title {
     width: 90vw;
@@ -114,7 +130,6 @@ h1 {
 h2 {
     font-size: 2rem;
     font-weight: 600;
-
 }
 h3 {
     font-size: 1.5rem;
@@ -274,19 +289,30 @@ p {
         font-size: 1.3rem;
     }
 }
-@media screen and (min-height: 700px)
+@media screen and (min-height: 800px)
               and (max-height: 900px) {
     body {
-        margin-top: 17vh;
+        margin-top: 15.5vh;
     }
     #nav-bar {
-        height: 17vh;
+        height: 15.5vh;
     }
     h3 {
         font-size: 1.3rem;
     }
 }
-
+@media screen and (min-height: 700px)
+              and (max-height: 800px) {
+    body {
+        margin-top: 16.5vh;
+    }
+    #nav-bar {
+        height: 16.5vh;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+}
 @media screen and (max-height: 700px)
               and (min-height: 600px) {
     body {
@@ -311,7 +337,6 @@ p {
         font-size: 1.1rem;
     }
 }
-
 @media screen and (max-height: 425px) {
     body {
         margin-top: 30vh;
@@ -337,5 +362,11 @@ p {
         width: 80%;
         margin-top: 1em;
         margin-bottom: 1em;
+    }
+}
+@media screen and (min-width: 0px)
+              and (max-width: 875px) {
+    h3 {
+        font-size: 1.0rem;
     }
 }
