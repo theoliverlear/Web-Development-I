@@ -1,0 +1,71 @@
+:root {
+    --bcolor: #0e0e33;
+    --navcolor: #050518;
+    --shadow: #252424;
+    --textcolor: cornsilk;
+}
+body {
+    margin: 0 0 0 12vw;
+    background-color: var(--bcolor);
+    color: cornsilk;
+    overflow: scroll;
+}
+nav {
+    background-color: #050518;
+    left: 0;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 7.5vw;
+    box-shadow: 0 0.25em 0.5em #252424;
+    text-shadow: 0 0 1px #252424;
+    overflow: hidden;
+    border-right: #252424 0.1em solid;
+    min-width: 7em;
+
+
+}
+.nav-text {
+    color: cornsilk;
+}
+.nav-text:not(:hover) {
+    background-color: #050518;
+    transition: background-color 0.25s ease-in-out;
+}
+.nav-text:hover {
+    color: #252424;
+    background-color: cornsilk;
+    transition: background-color 0.25s ease-in-out;
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+
+}
+#logo {
+    width: 5vw;
+    padding: 0 1.35vw;
+    min-width: 5em;
+}
+
+li h3 {
+    margin: 0;
+
+    text-align: center;
+    /*border: antiquewhite 0.1em solid;*/
+    /*border-top: antiquewhite 0.01em solid;*/
+    box-shadow: 0.1em 0.1em 0.1em #252424;
+    border: #252424 0.1em solid;
+    border-radius: 0.5em;
+    /*border-bottom: antiquewhite 0.01em solid;*/
+}
+section {
+    width: 75vw;
+
+}
+
