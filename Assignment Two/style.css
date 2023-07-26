@@ -1,71 +1,354 @@
+/*
+Oliver Sigwarth
+CIDS 225 - Web Development I
+Assignment Two | Personal Portfolio
+* The objective of this assignment is to create
+* a portfolio website that showcases your skills
+* and projects. You will use HTML to structure
+* the content and CSS to style and layout the
+* website.
+Created: 7/9/2023
+Last Modified: 7/14/2023
+ */
+
+/*----------------------------------------------
+| 2b. Apply CSS rules to style your portfolio  |
+|  * website, focusing on:                     |
+|  * Layout: Use CSS techniques to create a    |
+|  * visually appealing structure.             |
+|----------------------------------------------|
+|  * Typography: Choose appropriate fonts,     |
+|  * font sizes, and line heights for          |
+|  * different sections of your website.       |
+|----------------------------------------------|
+|  * Colors: Apply a cohesive color scheme to  |
+|  * your website, considering background      |
+|  * colors, text colors, and accent colors.   |
+|----------------------------------------------|
+|  * Images: Optimize and style images for     |
+|  * your projects and include appropriate     |
+|  * captions or descriptions.                 |
+----------------------------------------------*/
+
+/*---------------General-Content--------------*/
 :root {
+    --lblue: #053b60;
     --bcolor: #0e0e33;
     --navcolor: #050518;
-    --shadow: #252424;
-    --textcolor: cornsilk;
+    --shadow: #0c0a0a;
+    --highlight: #6a3db9;
+    --altshadow: #252424;
+    --cswhite: cornsilk;
+}
+html {
+    scroll-behavior: smooth;
 }
 body {
-    margin: 0 0 0 12vw;
+    margin: 1vw 5vw 0 12vw;
     background-color: var(--bcolor);
     color: cornsilk;
-    overflow: scroll;
+    padding: 2vw;
+    letter-spacing: 0.1em;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0.5em 0.5em 1em var(--shadow);
 }
-nav {
-    background-color: #050518;
+/*----------------Text-Content----------------*/
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    text-shadow: 0 0 1px var(--altshadow);
+    color: cornsilk;
+}
+li h3 {
+    margin: 0;
+    text-align: center;
+    box-shadow: 0.1em 0.1em 0.1em var(--altshadow);
+    border: var(--altshadow) 0.1em solid;
+    border-radius: 0.5em;
+}
+a {
+    cursor: pointer;
+}
+.highlight {
+    color: var(--highlight);
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.15s ease-in-out;
+}
+/*------------------Nav-Bar-------------------*/
+.nav-bar {
+    background-color: var(--navcolor);
     left: 0;
     position: fixed;
     top: 0;
     height: 100vh;
     width: 7.5vw;
-    box-shadow: 0 0.25em 0.5em #252424;
-    text-shadow: 0 0 1px #252424;
+    box-shadow: 0 0.25em 0.5em var(--altshadow);
+    text-shadow: 0 0 1px var(--altshadow);
     overflow: hidden;
-    border-right: #252424 0.1em solid;
-    min-width: 7em;
-
-
+    border-right: var(--altshadow) 0.1em solid;
+    min-width: 8.5em;
 }
-.nav-text {
-    color: cornsilk;
-}
-.nav-text:not(:hover) {
-    background-color: #050518;
-    transition: background-color 0.25s ease-in-out;
-}
-.nav-text:hover {
-    color: #252424;
-    background-color: cornsilk;
-    transition: background-color 0.25s ease-in-out;
-}
-ul {
+.nav-bar ul {
     list-style: none;
-    display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 50%;
     margin: 0;
     padding: 0;
-
 }
-#logo {
+#ol-logo {
     width: 5vw;
-    padding: 0 1.35vw;
     min-width: 5em;
+    margin-left: 1em;
 }
-
-li h3 {
-    margin: 0;
-
+.nav-anchor {
+    text-decoration: none;
+}
+.nav-text {
+    color: var(--cswhite);
+}
+.nav-text:hover {
+    color: var(--altshadow);
+    background-color: var(--cswhite);
+    transition: background-color
+    0.25s ease-in-out;
+}
+.nav-text:not(:hover) {
+    background-color: #050518;
+    transition: background-color 0.25s
+    ease-in-out;
+}
+.nav-bar li {
+    margin: 5vh 1vh;
+}
+/*-------------------Titles-------------------*/
+#name-title {
+    padding: 0.1em;
     text-align: center;
-    /*border: antiquewhite 0.1em solid;*/
-    /*border-top: antiquewhite 0.01em solid;*/
-    box-shadow: 0.1em 0.1em 0.1em #252424;
-    border: #252424 0.1em solid;
-    border-radius: 0.5em;
-    /*border-bottom: antiquewhite 0.01em solid;*/
+    font-size: 5vw;
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 1em var(--shadow);
+    border-radius: 2.5em;
+    background-image: url("images/profile/programming_profile_header.jpeg");
+}
+#intro-div {
+    margin-left: 4em;
+}
+#programmer-text {
+    font-size: 6.5vw;
+    color: #aba2cc;
+    text-align: center;
+    text-shadow: 0 0 1px var(--altshadow);
+    letter-spacing: 0.25em;
+}
+#profile-pic {
+    width: 15vw;
+    border-radius: 100em;
+    box-shadow: 0.5em 0.5em 1em var(--shadow);
+    margin: 1em auto;
+    display: inline;
+}
+/*---------------Item-Containers--------------*/
+.item-divider {
+    width: 90%;
+    margin: 1vw 0 1vw 5vw;
 }
 section {
+    padding: 1em;
     width: 75vw;
-
+    border-radius: 1em;
 }
-
+.section-header {
+    text-align: center;
+    font-size: 3vw;
+    text-shadow: 0 0 1px var(--altshadow);
+    letter-spacing: 0.3em;
+}
+.section-text {
+    text-align: justify;
+    margin: 0 0 1em 0;
+    padding: 0;
+    text-shadow: 0 0 1px var(--altshadow);
+    color: cornsilk;
+    font-size: 1.8vw;
+}
+.left {
+    float: left;
+    width: 50%;
+}
+.right {
+    float: right;
+    width: 50%;
+}
+.img-container {
+    max-height: 45vh;
+    max-width: 40vw;
+    overflow: auto;
+}
+.certificate-div, .insulin-pump-div,
+.c-trader-analysis-div {
+    margin-bottom: 30vw;
+}
+/*----------------Image-Content---------------*/
+.slideshow-img {
+    width: 35vw;
+    border-radius: 1.5em;
+}
+.slideshow-img:hover {
+    box-shadow: 1em 0.5em 5em var(--shadow);
+    transition: box-shadow 0.5s;
+}
+.slideshow-img:not(:hover) {
+    box-shadow: 0.5em 0.5em 1em var(--shadow);
+    transition: box-shadow 0.5s;
+}
+/*----------------Certificates----------------*/
+#cert-arrow {
+    border-radius: 100em;
+    box-shadow: 0 0 1em var(--shadow);
+    transition: box-shadow 0.35s;
+    width: 45%;
+    margin-bottom: 4em;
+}
+#cert-arrow:hover {
+    cursor: pointer;
+    box-shadow: 0 0 1em var(--lblue);
+    transition: box-shadow 0.35s;
+}
+#cert-arrow:not(:hover) {
+    box-shadow: 0.5em 0.5em 1em var(--shadow);
+}
+/*----------------Crypto-Trader---------------*/
+#c-trader-arrow {
+    border-radius: 100em;
+    box-shadow: 0 0 1em var(--shadow);
+    transition: box-shadow 0.35s;
+    width: 45%;
+    margin-bottom: 4em;
+}
+#c-trader-arrow:hover {
+    cursor: pointer;
+    box-shadow: 0 0 1em var(--lblue);
+    transition: box-shadow 0.35s;
+}
+#c-trader-arrow:not(:hover) {
+    box-shadow: 0 0 1em var(--shadow);
+}
+/*------------Crypto-Trader-Analysis----------*/
+#c-trader-analysis-arrow {
+    border-radius: 100em;
+    box-shadow: 0 0 1em var(--shadow);
+    transition: box-shadow 0.35s;
+    width: 45%;
+    margin-bottom: 4em;
+}
+#c-trader-analysis-arrow:hover {
+    cursor: pointer;
+    box-shadow: 0 0 1em var(--lblue);
+    transition: box-shadow 0.35s;
+}
+#c-trader-analysis-arrow:not(:hover) {
+    box-shadow: 0 0 1em var(--shadow);
+}
+/*--------------Currency-Converter------------*/
+#cc-arrow {
+    border-radius: 100em;
+    box-shadow: 0 0 1em var(--shadow);
+    transition: box-shadow 0.35s;
+    width: 45%;
+    margin-bottom: 4em;
+}
+#cc-arrow:hover {
+    cursor: pointer;
+    box-shadow: 0 0 1em var(--lblue);
+    transition: box-shadow 0.35s;
+}
+#cc-arrow:not(:hover) {
+    box-shadow: 0 0 1em var(--shadow);
+}
+/*-----------------Insulin-Pump---------------*/
+#insulin-pump-arrow {
+    border-radius: 100em;
+    box-shadow: 0 0 1em var(--shadow);
+    transition: box-shadow 0.35s;
+    width: 45%;
+    margin-bottom: 4em;
+}
+#insulin-pump-arrow:hover {
+    cursor: pointer;
+    box-shadow: 0 0 1em var(--lblue);
+    transition: box-shadow 0.35s;
+}
+#insulin-pump-arrow:not(:hover) {
+    box-shadow: 0 0 1em var(--shadow);
+}
+/*--------------------Footer------------------*/
+.footer-div h1 {
+    font-size: 2.5vw;
+    text-align: center;
+    margin: 0 0 1.2vw 0;
+    padding: 0;
+    color: cornsilk;
+    text-shadow: 0 0 1px var(--altshadow);
+    border-radius: 5em;
+}
+.footer-div .left h1 {
+    letter-spacing: 0.5em;
+}
+#to-the-top-arrow {
+    height: 100px;
+    width: 100px;
+    bottom: 0;
+    right: 0;
+    z-index: auto;
+    position: fixed;
+    border-radius: 100em;
+    box-shadow: 0.5em 0.5em 1em var(--shadow);
+    transition: box-shadow 0.35s;
+}
+#to-the-top-arrow:hover {
+    cursor: pointer;
+    box-shadow: 0 0 1em var(--lblue);
+    transition: box-shadow 0.35s;
+}
+#to-the-top-arrow:not(:hover) {
+    box-shadow: 0 0 1em var(--shadow);
+}
+/*-------------------Sizing-------------------*/
+@media screen and (min-width: 700px)
+              and (max-width: 1100px) {
+    body {
+        margin: 1vw 0 0 15vw;
+    }
+}
+@media screen and (min-width: 500px)
+              and (max-width: 700px) {
+    body {
+        margin: 1vw 0 0 20vw;
+    }
+    #programmer-text {
+        font-size: 5.5vw;
+    }
+    .nav-bar {
+        width: 5%;
+        font-size: 2vw;
+        min-width: fit-content;
+    }
+}
+@media screen and (min-width: 0px)
+              and (max-width: 500px) {
+    body {
+        margin: 1vw 0 0 15vw;
+    }
+    #programmer-text {
+        font-size: 5vw;
+    }
+    .nav-bar {
+        width: 5%;
+        font-size: 2vw;
+        min-width: fit-content;
+    }
+}

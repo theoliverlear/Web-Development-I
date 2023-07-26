@@ -6,65 +6,333 @@
 | * showcases your skills and projects. You will use HTML to structure the   |
 | * content and CSS to style and layout the website.                         |
 | Created: 7/9/2023                                                          |
-| Last Modified: 7/9/2023                                                    |
+| Last Modified: 7/14/2023                                                   |
+----------------------------------------------------------------------------->
+
+<!----------------------------------------------------------------------------
+| 1a. HTML Structure: create an index.html file that serves as the main page |
+|  * of your portfolio.                                                      |
 ----------------------------------------------------------------------------->
 <!DOCTYPE html>
+<!----------------------------------------------------------------------------
+| 1b. Use HTML tags to structure the content of your portfolio, including    |
+|  * sections for:                                                           |
+|  * 1) introduction 2) skills 3) projects 4) contact information            |
+|  * 5) and any additional sections you want to include.                     |
+----------------------------------------------------------------------------->
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Assignment One | HTML Showcase</title>
-  <link rel="stylesheet" href="style.css">
-  <!---------------------------------Favicons-------------------------------->
-  <!-- Favicons generated using favicon.io -->
-  <!-- Logo is my personal logo -->
-  <link rel="apple-touch-icon" sizes="180x180"
-           href="favicon/apple-touch-icon.png">
+    <meta charset="UTF-8">
+    <title>Assignment One | HTML Showcase</title>
+    <!------------------------------------------------------------------------
+    | 2a. Create a separate style.css file and link it to your HTML file.    |
+    ------------------------------------------------------------------------->
+    <link rel="stylesheet" href="style.css">
+    <!------------------------------Favicons--------------------------------->
+    <!-- Favicons generated using favicon.io -->
+    <!-- Logo is my personal logo -->
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="favicon/apple-touch-icon.png">
 
-  <link rel="icon" type="image/png" sizes="512x512"
+    <link rel="icon" type="image/png" sizes="512x512"
           href="favicon/android-chrome-512x512.png">
 
-  <link rel="icon" type="image/png" sizes="192x192"
+    <link rel="icon" type="image/png" sizes="192x192"
           href="favicon/android-chrome-192x192.png">
 
-  <link rel="icon" type="image/png" sizes="32x32"
-                 href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="favicon/favicon-32x32.png">
 
-  <link rel="icon" type="image/png" sizes="16x16"
-                 href="favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="favicon/favicon-16x16.png">
 
-  <link rel="icon" type="image/x-icon" sizes="16x16"
-                          href="favicon/favicon.ico">
+    <link rel="icon" type="image/x-icon" sizes="16x16"
+          href="favicon/favicon.ico">
 </head>
 <body>
-<nav>
-  <ul>
-    <li>
-      <a><img src="favicon/android-chrome-192x192.png" alt="Logo"
-      id="logo"></a>
-    </li>
-    <li>
-      <a><h3 class="nav-text">Certificates</h3></a>
-    </li>
-    <li>
-      <a><h3 class="nav-text">Crypto <br> Trader</h3></a>
-    </li>
-    <li>
-      <a><h3 class="nav-text">Currency <br> Converter</h3></a>
-    </li>
-    <li>
-      <a><h3 class="nav-text">Aliens <br> vs <br> Humans</h3></h2></a>
-    </li>
-  </ul>
+<!---------------------------------Nav-Bar----------------------------------->
+
+<!----------------------------------------------------------------------------
+| 1d. Navigation: Create a navigation menu or bar that allows users to       |
+|  * easily navigate through different sections of your portfolio.           |
+----------------------------------------------------------------------------->
+<nav class="nav-bar">
+    <ul>
+        <!-- Logo -->
+        <li>
+            <a target="_blank" href="https://github.com/theoliverlear">
+                <img src="favicon/android-chrome-192x192.png"
+                     title="(New Tab) GitHub @theoliverlear"
+                     alt="Logo" id="ol-logo">
+            </a>
+        </li>
+        <!-- Certificates -->
+        <li>
+            <a class="nav-anchor" href="#certificate-section">
+                <h3 class="nav-text">Certificates</h3>
+            </a>
+        </li>
+        <!-- Crypto Trader -->
+        <li>
+            <a class="nav-anchor" href="#crypto-trader-section">
+                <h3 class="nav-text">Crypto <br> Trader</h3>
+            </a>
+        </li>
+        <!-- Crypto Trader Analysis -->
+        <li>
+            <a class="nav-anchor" href="#c-trader-analysis-section">
+                <h3 class="nav-text">Crypto <br> Trader <br> Analysis</h3>
+            </a>
+        <li>
+            <!-- Currency Converter -->
+            <a class="nav-anchor" href="#cc-section">
+                <h3 class="nav-text">Currency <br> Converter</h3>
+            </a>
+        </li>
+        <!-- Insulin Pump -->
+        <li>
+            <a class="nav-anchor" href="#insulin-pump-section">
+                <h3 class="nav-text">Insulin <br> Pump</h3>
+            </a>
+        </li>
+    </ul>
 </nav>
+<!----------------------------------------------------------------------------
+| 1c. Ensure that your HTML is semantic and well-structured, with            |
+|  * appropriate use of headings, paragraphs, lists, and other relevant HTML |
+|  * elements.                                                               |
+----------------------------------------------------------------------------->
+
+<!----------------------------------Titles----------------------------------->
 <main>
-  <section>
-    <h1>Certificates</h1>
-    <p>
-      This is a showcase of the HTML skills I have learned in CIDS 225.
-      This page is a work in progress and will be updated as I learn more
-      HTML and CSS.
-    </p>
-  </section>
+    <h1 id="name-title"><em>Oliver Sigwarth</em></h1>
+    <div id="intro-div">
+        <h2 id="programmer-text" class="left"><em>Programmer</em></h2>
+        <img class="right" id="profile-pic"
+             src="images/profile/programming_profile_bw.jpeg"
+             alt="Profile Picture">
+    </div>
+
+    <hr class="item-divider" />
+    <!-----------------------------Certificates------------------------------>
+    <section id="certificate-section">
+        <h2 class="section-header">Certificates</h2>
+        <p id="cert-p-text" class="section-text">
+            I have a series of certifications from taking Codecademy courses –
+            an educational programming platform. Such certifications include
+            Java, C++, Python, HTML, CSS, and JavaScript – among others. The
+            work done to get these certifications has made me adept enough to
+            build the proceeding projects. In conjunction to Codecademy
+            courses, I actively pursue independent learning and projects.
+            Learning a diverse selection of topics has been beneficial to make
+            programs that interact with each other. While still being a humble
+            learner, I have been adept at my main language Java where you will
+            see I have been able to progress to having skills in database
+            management, graphical user interfaces, and logic-intensive
+            algorithms. I continue to learn and add more certifications.
+        </p>
+        <div class="certificate-div">
+            <div class="left img-container">
+                <img class="slideshow-img" id="certificate-img"
+                     src="images/certificates/interactive_js_websites.png"
+                     alt="Certificate">
+            </div>
+            <div class="right">
+                <img class="slideshow-arrow" id="cert-arrow"
+                     src="./images/arrows/arrow_right.png"
+                     alt="Arrow"
+                     title="Arrow">
+            </div>
+
+        </div>
+    </section>
+    <hr class="item-divider" />
+    <!-----------------------------Crypto-Trader----------------------------->
+    <section id="crypto-trader-section">
+        <h2 class="section-header">Crypto Trader</h2>
+        <p class="section-text">
+            The Crypto Trader is a Java program which tracks the price of
+            cryptocurrencies and trades them in a profitable way. The
+            algorithm for which the program is based on is not an attempt to
+            project the cryptocurrency market – but to follow the adage “buy
+            low, sell high.” Taking such an approach is a solely profitable
+            endeavor. While trying to game the market may earn someone more
+            than the Crypto Trader, the program leverages computing power to
+            earn secure money. Risk is a factor for many traders. Providing an
+            automated way to perform trades which guarantees a safe bet will
+            open up the market to people who are afraid to put their precious
+            capital into a volatile market. Once fully implemented, users from
+            Coinbase to Binance could run the program to perform profitable
+            trades with a speed and attentiveness that only a computer can
+            have.
+        </p>
+        <div class="c-trader-div">
+            <div class="left img-container">
+                <img class="slideshow-img" id="c-trader-img"
+                     src="images/CryptoTrader/buy_asset.png"
+                     alt="Crypto Trader">
+            </div>
+            <div class="right">
+                <img class="slideshow-arrow" id="c-trader-arrow"
+                     src="./images/arrows/arrow_right.png"
+                     alt="Arrow"
+                     title="Arrow">
+            </div>
+        </div>
+    </section>
+    <hr class="item-divider" />
+    <!-------------------------Crypto-Trader-Analysis------------------------>
+    <section id="c-trader-analysis-section">
+        <h2 class="section-header">Crypto Trader Analysis</h2>
+        <p class="section-text">
+            The Crypto Trader Analysis program is a utility used alongside the
+            Crypto Trader to provide the user with an analysis of
+            cryptocurrency value and insight into the profitability of the
+            trading algorithm. The program is built upon Python’s vast data
+            science libraries like Pandas and Matplotlib. While Crypto Trader
+            is the brains, Crypto Trader Analysis is the beauty. That beauty
+            is the conversion of textual or spreadsheet data into a
+            human-readable form using visualizations. Such visualizations are
+            the value of a given cryptocurrency over time, the way that has
+            affected one’s portfolio by the trading algorithm, and an
+            evaluation of the best performing assets. Moving forward, the
+            Crypto Trader Analysis program will add more algorithms and
+            visualizations to its library. Items like scatter plot
+            relationships upon different data points will assist in making
+            decisions about which currency is most profitable in a correlative
+            manner. Along with static visualizations, the program aims to have
+            animated data which will provide another dimension of analysis for
+            the user.
+        </p>
+        <div class="c-trader-analysis-div">
+            <div class="left img-container">
+                <img id="c-trader-analysis-img"
+                     class="slideshow-img"
+                     src="images/CryptoTraderAnalysis/btc_figure.png"
+                     alt="Crypto Trader Analysis">
+            </div>
+            <div class="right">
+                <img class="slideshow-arrow" id="c-trader-analysis-arrow"
+                     src="./images/arrows/arrow_right.png"
+                     alt="Arrow"
+                     title="Arrow">
+            </div>
+        </div>
+    </section>
+    <hr class="item-divider" />
+    <!---------------------------Currency-Converter-------------------------->
+    <section id="cc-section">
+        <h2 class="section-header">Currency Converter</h2>
+        <p class="section-text">
+            A product of the UWRF Development Team, the Currency Converter,
+            which I contributed to, provides a simple yet important service.
+            It provides the user with an immediate evaluation of a currency’s
+            value. Many people who search for tools do not want them to be
+            overly complex. Often the best tools are reserved and provide a
+            service in an intuitive and swift manner. The program takes data
+            from Open Exchange Rates API. This API provides an almost instant
+            evaluation of currency values. It solidifies the Currency
+            Converter with an authoritative and swift dataset. From US Dollars
+            to Pesos to Rubles, the Currency Converter will operate with any
+            combination of currency conversion. The user may also operate the
+            program as a wallet to keep up to date their assets in various
+            currencies as an investment endeavor. For example, a user may want
+            an up-to-date conversion of Rubles to US Dollars based on the oil
+            productivity of the Russian state. Or, perhaps, the United States
+            Federal Reserve increases interest rates. The user will be able to
+            decide if the value of their currency is best held in US Dollars
+            or a more stable currency. These are some of many scenarios where
+            the Currency Converter can be utilized. The program will continue
+            to evolve and will provide its service in both a desktop and web
+            medium. In web form, a user could simply type into Google
+            “currency converter” and be provided with instant service or in
+            desktop form where the program may be a data source for other
+            applications who rely on currency values and exchanges for
+            operation.
+        </p>
+        <div class="cc-div">
+            <div class="left img-container">
+                <img id="cc-img"
+                     class="slideshow-img"
+                     src="images/CurrencyConverter/assign_data.png"
+                     alt="Currency Converter">
+            </div>
+            <div class="right">
+                <img class="slideshow-arrow" id="cc-arrow"
+                     src="./images/arrows/arrow_right.png"
+                     alt="Arrow"
+                     title="Arrow">
+            </div>
+        </div>
+    </section>
+    <hr class="item-divider" />
+    <!----------------------------Insulin-Pump------------------------------->
+    <section id="insulin-pump-section">
+        <h2 class="section-header">Insulin Pump</h2>
+        <p class="section-text">
+            As a Type 1 Diabetic, one of my first programming endeavors was
+            the creation of an insulin pump program. The Insulin Pump program
+            performs calculations for the user to easily log and manage their
+            blood sugars. From the delivery screen, one may input their
+            current blood sugar and how many carbs they plan to eat. With the
+            data, the program will provide the user with an accurate bolus.
+            The Insulin Pump program is in tandem with the technological
+            efforts of CareLink. The program will hold, visualize, and
+            calculate Diabetes related data. Taking the right bolus is vital
+            to a Diabetics health. Accounting for such importance, the program
+            currently has a stable and safe set of algorithms, which will
+            conduct calculations for the user, as its first priority. There
+            will be no need to grab a calculator to see how many times a
+            12-carb serving goes into 57 carbs and how many units of a
+            correction go into a blood sugar of 267. The Insulin Pump utilizes
+            the computer’s ability to make complex calculations quickly to
+            provide an enhanced way of life for Diabetics who use its tools.
+            Future functionality of the Insulin Pump program will be a
+            connection between one’s sensor via Bluetooth and the Insulin Pump
+            program. Someone will be able to press a button to see the trends
+            of their blood sugars and its relation to basal and carb ratios or
+            calculate a bolus with a few strokes of a keyboard. The Insulin
+            Pump takes the mission of CareLink and runs with it to provide a
+            program for Diabetics by Diabetics.
+        </p>
+        <div class="insulin-pump-div">
+            <div class="left img-container">
+                <img id="insulin-pump-img"
+                     class="slideshow-img"
+                     src="images/InsulinPump/bg_button.png"
+                     alt="Insulin Pump">
+            </div>
+            <div class="right">
+                <img class="slideshow-arrow" id="insulin-pump-arrow"
+                     src="./images/arrows/arrow_right.png"
+                     alt="Arrow"
+                     title="Arrow">
+            </div>
+        </div>
+    </section>
+    <hr class="item-divider" />
 </main>
+<!----------------------------------Footer----------------------------------->
+<section>
+    <div class="footer-div">
+        <div class="left">
+            <h1><em>Contact: </em></h1>
+        </div>
+        <div class="right">
+             <a href="mailto:theoliverlear@gmail.com" target="_blank"
+                class="nav-anchor"
+                title="(New Tab) Send Email">
+                 <h1 class="nav-text">theoliverlear@gmail.com</h1>
+            </a>
+        </div>
+    </div>
+</section>
+<hr class="item-divider" />
+<a href="#name-title">
+    <img id="to-the-top-arrow" src="images/arrows/arrow.png"
+         alt="Back The Top Arrow"
+         title="Back to top">
+</a>
+<script src="script.js" defer></script>
 </body>
 </html>
