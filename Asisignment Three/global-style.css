@@ -32,8 +32,7 @@ body {
     padding: 2vw 0 0 0;
     letter-spacing: 0.1em;
     font-family: Roboto, sans-serif;
-
-
+    height: 100%;
 }
 nav {
     background-color: black;
