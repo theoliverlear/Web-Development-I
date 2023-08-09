@@ -1,80 +1,129 @@
+/*==============================================
+Oliver Sigwarth                                |
+CIDS 225 - Web Development I                   |
+Assignment One | HTML Showcase                 |
+ * The objective of this assignment is to      |
+ * demonstrate your proficiency in HTML and    |
+ * CSS by creating a personal website.         |
+Created: 6/6/2023                              |
+Last Modified: 6/16/2023                       |
+==============================================*/
+
 :root {
     --ivory: #eaccb3;
     --cswhite: cornsilk;
     --silver: #D9D9D9 ;
-    --gray: #A8A8A8 ;
+    --dgray: #333333;
+    --mgray: #555555;
+    --lgray: #A8A8A8 ;
     --blue: #141f57;
     --lblue: #283167;
-    --gray: #A8A8A8 ;
+    --altshadow: #252424;
+    --altblack: #0e0e1a;
+    --pureblack: #000000;
 }
 html {
     scroll-behavior: smooth;
 }
 body {
-    margin: 1vw 5vw 0 12vw;
+    margin: 5.5vw 0 0 0;
     background-color: var(--silver);
     color: var(--blue);
-    padding: 2vw;
+    padding: 2vw 0 0 0;
     letter-spacing: 0.1em;
-    font-family: 'Roboto', sans-serif;
-    box-shadow: 0.5em 0.5em 1em var(--gray);
+    font-family: Roboto, sans-serif;
+
+
 }
 nav {
-    background-color: var(--lblue);
+    background-color: black;
     left: 0;
     position: fixed;
+    margin: 0;
     top: 0;
-    height: 7.5vw;
+    height: 5vw;
     width: 100vw;
-    box-shadow: 0 0.25em 0.5em var(--gray);
-    text-shadow: 0 0 1px var(--gray);
-}
-h3 {
-    margin: 0;
-    text-align: center;
-    box-shadow: 0.1em 0.1em 0.1em var(--ivory);
-    border: var(--gray) 0.1em solid;
-    border-radius: 0.5em;
-}
-
-nav ul {
-    width: 100%;
-    list-style-type: none;
-    padding: 0;
+    box-shadow: 0 0.25em 0.5em var(--altshadow);
+    border-bottom-left-radius: 5em;
+    border-bottom-right-radius: 5em;
     display: flex;
+}
+nav:hover {
+    box-shadow: 0 1.25em 1.5em var(--altshadow);
+    transition: box-shadow 0.15s ease-in-out;
+}
+nav:not(:hover) {
+    box-shadow: 0 0.25em 0.5em var(--altshadow);
+    transition: box-shadow 0.15s ease-in-out;
+}
 
+nav ul li:hover {
+    background-color: var(--pureblack);
+    transition: background-color 0.15s ease-in-out;
 }
-nav li {
-    margin: 0;
-    padding: 1vw 15vw;
-    position: relative;
-}
+
 nav a {
     text-decoration: none;
     color: var(--ivory);
-    display: block;
-    transition: background-color 0.3s;
 }
-nav li:hover {
-    background-color: var(--silver);
+nav h3 {
+    text-transform: uppercase;
+    font-size: 2.7vw;
 }
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
+
+
+h3 {
+
+    text-align: center;
+    font-size: 2vw;
+}
+
+a {
+    cursor: pointer;
+}
+nav ul {
+    width: 100%;
+    margin: 0;
+    top: 0;
     left: 0;
-    background-color: #333;
-    border: 1px solid #555;
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
 }
-.dropdown-content li {
-    padding: 8px 16px;
-}
-.dropdown-content a:hover {
-    background-color: #777;
-}
-.dropdown:hover .dropdown-content {
+
+.left {
+    float: left;
     display: block;
+}
+.right {
+    float: right;
+    display: block;
+}
+footer a {
+    text-decoration: none;
+    color: var(--ivory);
+}
+footer {
+    display: block;
+    background-color: var(--pureblack);
+
+    height: 8vw;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+footer ul {
+    width: 100%;
+    top: 0;
+    left: 0;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+footer li {
+    margin: 0 8vw 0 8vw;
 }

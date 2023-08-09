@@ -1,0 +1,68 @@
+:root {
+    --ivory: #eaccb3;
+    --cswhite: cornsilk;
+    --silver: #D9D9D9 ;
+    --dgray: #333333;
+    --mgray: #555555;
+    --lgray: #A8A8A8 ;
+    --blue: #141f57;
+    --lblue: #283167;
+    --bblue: #7e95ce;
+    --altshadow: #252424;
+    --altblack: #0e0e1a;
+    --pureblack: #000000;
+}
+.title-header {
+    box-shadow: 0.5em 0.5em 1em var(--lgray);
+    padding: 1vw;
+    height: 25vw;
+    background-image: url(../global-images/programming_profile_header.jpeg);
+    background-size: cover;
+    border-bottom-left-radius: 5em;
+    border-top-right-radius: 5em;
+}
+#logo-img {
+    width: 25vw;
+}
+#name-title {
+    padding: 0.5em;
+    text-align: center;
+    font-size: 5vw;
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 1em var(--altshadow);
+    border-radius: 2.5em;
+    background-color: var(--silver);
+}
+#topic-title {
+    padding: 0.1em;
+    text-align: center;
+    font-size: 3vw;
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 1em var(--altshadow);
+    border-radius: 2.5em;
+    background-color: var(--silver);
+}
+#welcome-text {
+    padding: 0.5em;
+    text-align: justify;
+    font-size: 2vw;
+    letter-spacing: 0.15em;
+    box-shadow: 0 0 1em var(--altshadow);
+    background-color: var(--silver);
+    color: var(--altblack);
+    border-radius: 0.5vw;
+    margin: 0 2vw;
+}
+#hobby-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1vw;
+}
+article.hobby-card {
+    height: 25vw;
+    margin: 0 1.5vw;
+    width: 28vw;
+    font-size: 2vw;
+}

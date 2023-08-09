@@ -1,11 +1,11 @@
 <!----------------------------------------------------------------------------
 | Oliver Sigwarth                                                            |
 | CIDS 225 - Web Development I                                               |
-| Assignment Two | Hobby Showcase                                            |
+| Assignment Three | Hobby Showcase                                          |
 | * The objective of this assignment is to demonstrate your proficiency in   |
 | * HTML and CSS by creating a personal website.                             |
 | Created: 8/6/2023                                                          |
-| Last Modified: 8/6/2023                                                   |
+| Last Modified: 8/6/2023                                                    |
 ----------------------------------------------------------------------------->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -38,29 +38,82 @@
 <body>
 <nav>
     <ul>
-        <li><a href="home.html">Home</a></li>
-        <li class="dropdown">
-            <a href="../hobbies/hobbies.html"><h3>Hobbies</h3></a>
-            <ul class="dropdown-content">
-                <li>
-                    <a href="../hobbies/independent-projects/index.html">
-                        <h3>Independent Projects</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="../hobbies/codecademy/index.html">
-                        <h3>Codecademy</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="../hobbies/reading/index.html">
-                        <h3>Reading</h3>
-                    </a>
-                </li>
-            </ul>
+        <li>
+            <a href="home.html"><h3>Home</h3></a>
         </li>
-        <li><a href="../about/about.html">About</a></li>
+        <li class="dropdown-container">
+            <a href="../hobbies/hobbies.html"><h3>Hobbies</h3></a>
+        </li>
+        <li>
+            <a href="../about/about.html"><h3>About</h3></a>
+        </li>
     </ul>
 </nav>
+<section class="title-header">
+    <div class="left">
+        <h1 id="name-title">Oliver Sigwarth</h1>
+        <h2 id="topic-title"><em>Hobby Showcase</em></h2>
+    </div>
+    <div class="right">
+        <img id="logo-img"
+             src="../global-images/favicon/android-chrome-512x512.png"
+             alt="logo">
+    </div>
+
+</section>
+<section>
+    <hr />
+    <article>
+        <p id="welcome-text">
+            This is sample text for the home page. This is sample text for the
+            home page. This is sample text for the home page. This is sample
+            text for the home page. This is sample text for the home page.
+            This is sample text for the home page. This is sample text for the
+            home page. This is sample text for the home page. This is sample
+            text for the home page. This is sample text for the home page.
+            This is sample text for the home page. This is sample text for the
+            home page. This is sample text for the home page. This is sample
+            text for the home page. This is sample text for the home page.
+            This is sample text for the home page. This is sample text for the
+            home page. This is sample text for the home page. This is sample
+            text for the home page. This is sample text for the home page.
+        </p>
+    </article>
+</section>
+<section id="hobby-card-container">
+    <hr />
+    <article class="hobby-card">
+        <h2>Projects</h2>
+        <hr />
+        <p>
+            This is sample text for the home page. This is sample text for the
+            home page.
+        </p>
+    </article>
+    <article class="hobby-card">
+        <h2>Codecademy</h2>
+        <hr />
+        <p>
+            This is sample text for the home page. This is sample text for the
+            home page.
+        </p>
+    </article>
+    <article class="hobby-card">
+        <h2>Reading</h2>
+        <hr />
+        <p>
+            This is sample text for the home page. This is sample text for the
+            home page.
+        </p>
+    </article>
+</section>
+<footer>
+    <ul>
+        <li><a href="mailto:theoliverlear@gmail.com"><h3>Email</h3></a></li>
+        <li><a href="twitter.com/theoliverlear"><h3>Twitter</h3></a></li>
+        <li><a href="linkedin.com/in/oliver-sigwarth"><h3>LinkedIn</h3></a></li>
+        <li><a href="github.com/theoliverlear"><h3>GitHub</h3></a></li>
+    </ul>
+</footer>
 </body>
 </html>
