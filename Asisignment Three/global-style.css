@@ -180,12 +180,14 @@ footer ul li h3 {
 footer ul li h3:hover {
     color: var(--altshadow);
     background-color: var(--ivory);
-    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out,
+                color 0.15s ease-in-out;
 }
 footer ul li h3:not(:hover) {
     color: var(--ivory);
     background-color: var(--pureblack);
-    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out,
+                color 0.15s ease-in-out;
 }
 #to-top-arrow {
     position: fixed;

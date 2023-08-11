@@ -33,6 +33,16 @@ Last Modified: 8/11/2023                       |
     margin: 0 2vw 3vw 2vw;
     padding: 1.25vw;
 }
+#about-me-header:hover {
+    background-color: var(--altblack);
+    color: var(--cswhite);
+    transition: 0.5s;
+}
+#about-me-header:not(:hover) {
+    background-color: var(--silver);
+    color: var(--blue);
+    transition: 0.5s;
+}
 /*----------------Image-Content---------------*/
 #profile-img, #partner-img {
     width: 45vw;
