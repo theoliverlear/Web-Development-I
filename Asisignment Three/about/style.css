@@ -1,0 +1,54 @@
+/*==============================================
+Oliver Sigwarth                                |
+CIDS 225 - Web Development I                   |
+Assignment Three | Hobby Showcase              |
+ * The objective of this assignment is to      |
+ * demonstrate your proficiency in HTML and    |
+ * CSS by creating a personal website.         |
+Created: 8/9/2023                              |
+Last Modified: 8/11/2023                       |
+==============================================*/
+
+/*---------------General-Content--------------*/
+:root {
+    --ivory: #eaccb3;
+    --cswhite: cornsilk;
+    --silver: #D9D9D9 ;
+    --dgray: #333333;
+    --mgray: #555555;
+    --lgray: #A8A8A8 ;
+    --blue: #141f57;
+    --lblue: #283167;
+    --bblue: #7e95ce;
+    --altshadow: #252424;
+    --altblack: #0e0e1a;
+    --pureblack: #000000;
+}
+/*-------------------Titles-------------------*/
+#about-me-header {
+    text-align: center;
+    font-size: 2.5vw;
+    box-shadow: var(--altshadow) 0 0 0.5em;
+    border-radius: 5vw;
+    margin: 0 2vw 3vw 2vw;
+    padding: 1.25vw;
+}
+/*----------------Image-Content---------------*/
+#profile-img, #partner-img {
+    width: 45vw;
+    border-radius: 12%;
+    box-shadow: var(--altshadow) 0 0 0.5em;
+    margin: 0 2vw 3vw 2vw;
+}
+#partner-img:hover, #profile-img:hover {
+    box-shadow: var(--altshadow) 0 0 1em;
+    transition: 0.5s;
+}
+#partner-img:not(:hover), #profile-img:not(:hover) {
+    box-shadow: var(--altshadow) 0 0 0.5em;
+    transition: 0.5s;
+}
+/*--------------------Footer------------------*/
+footer {
+    margin-top: 4vw;
+}

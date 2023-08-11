@@ -1,14 +1,15 @@
 /*==============================================
 Oliver Sigwarth                                |
 CIDS 225 - Web Development I                   |
-Assignment One | HTML Showcase                 |
+Assignment Three | Hobby Showcase              |
  * The objective of this assignment is to      |
  * demonstrate your proficiency in HTML and    |
  * CSS by creating a personal website.         |
-Created: 6/6/2023                              |
-Last Modified: 6/16/2023                       |
+Created: 8/9/2023                              |
+Last Modified: 8/11/2023                       |
 ==============================================*/
 
+/*---------------General-Content--------------*/
 :root {
     --ivory: #eaccb3;
     --cswhite: cornsilk;
@@ -26,21 +27,45 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    margin: 5.5vw 0 0 0;
+    margin: 5vw 0 0 0;
     background-color: var(--silver);
     color: var(--blue);
     padding: 2vw 0 0 0;
     letter-spacing: 0.1em;
     font-family: Roboto, sans-serif;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+main {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+}
+/*----------------Text-Content----------------*/
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 2.5vw;
+    text-shadow: 0 0 1px var(--altshadow);
+    color: var(--blue);
+}
+h3 {
+    text-align: center;
+    font-size: 2vw;
+}
+a {
+    cursor: pointer;
+}
+/*------------------Nav-Bar-------------------*/
 nav {
-    background-color: black;
+    background-color: var(--pureblack);
     left: 0;
     position: fixed;
     margin: 0;
     top: 0;
-    height: 5vw;
+    height: 4.75vw;
     width: 100vw;
     box-shadow: 0 0.25em 0.5em var(--altshadow);
     border-bottom-left-radius: 5em;
@@ -55,12 +80,6 @@ nav:not(:hover) {
     box-shadow: 0 0.25em 0.5em var(--altshadow);
     transition: box-shadow 0.15s ease-in-out;
 }
-
-nav ul li:hover {
-    background-color: var(--pureblack);
-    transition: background-color 0.15s ease-in-out;
-}
-
 nav a {
     text-decoration: none;
     color: var(--ivory);
@@ -69,16 +88,8 @@ nav h3 {
     text-transform: uppercase;
     font-size: 2.7vw;
 }
-
-
-h3 {
-
-    text-align: center;
-    font-size: 2vw;
-}
-
-a {
-    cursor: pointer;
+ul {
+    list-style: none;
 }
 nav ul {
     width: 100%;
@@ -90,39 +101,105 @@ nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
-
+nav ul li h3 {
+    margin: 0;
+    padding: 0.8vw;
+    border-radius: 10vw;
+}
+nav ul li h3:hover {
+    color: var(--altshadow);
+    background-color: var(--ivory);
+    transition: background-color 0.15s ease-in-out,
+                color 0.15s ease-in-out;
+}
+nav ul li h3:not(:hover) {
+    color: var(--ivory);
+    background-color: var(--pureblack);
+    transition: background-color 0.15s ease-in-out,
+                color 0.15s ease-in-out;
+}
+/*-------------------Article------------------*/
+article {
+    padding: 2vw;
+    text-align: justify;
+    font-size: 1.8vw;
+    letter-spacing: 0.15em;
+    box-shadow: 0 0 1em var(--altshadow);
+    background-color: var(--silver);
+    color: var(--altblack);
+    border-radius: 0.5vw;
+    margin: 0 2vw;
+}
+article:hover {
+    box-shadow: 0 0 0.5em var(--altshadow);
+    transition: box-shadow 0.5s ease-in-out;
+}
+article:not(:hover) {
+    box-shadow: 0 0 1em var(--altshadow);
+    transition: box-shadow 0.5s ease-in-out;
+}
+/*---------------Item-Containers--------------*/
 .left {
     float: left;
-    display: block;
+    width: 50%;
 }
 .right {
     float: right;
+    width: 50%;
+}
+/*--------------------Footer------------------*/
+footer {
     display: block;
+    background-color: var(--pureblack);
+    height: 6vw;
+    width: 100%;
+    bottom: 0;
+    left: 0;
 }
 footer a {
     text-decoration: none;
     color: var(--ivory);
 }
-footer {
-    display: block;
-    background-color: var(--pureblack);
-
-    height: 8vw;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-}
 footer ul {
     width: 100%;
-    top: 0;
+    margin: 0;
+    bottom: 0;
     left: 0;
     list-style-type: none;
     padding: 0;
     display: flex;
+    justify-content: space-around;
     align-items: center;
 }
-footer li {
-    margin: 0 8vw 0 8vw;
+footer ul li h3 {
+    margin: 0;
+    padding: 0.8vw;
+    border-radius: 10vw;
+}
+footer ul li h3:hover {
+    color: var(--altshadow);
+    background-color: var(--ivory);
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+footer ul li h3:not(:hover) {
+    color: var(--ivory);
+    background-color: var(--pureblack);
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+#to-top-arrow {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 8vw;
+    width: 8vw;
+    margin: 0 2vw 2vw 0;
+    border-radius: 100em;
+    box-shadow: 0.5em 0.5em 1em var(--lgray);
+    transition: box-shadow 0.35s;
+    cursor: pointer;
+}
+#to-top-arrow:hover {
+    box-shadow: 0 0 1em var(--lblue);
+    transition: box-shadow 0.35s;
 }

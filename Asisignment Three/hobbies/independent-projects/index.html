@@ -1,10 +1,124 @@
+<!----------------------------------------------------------------------------
+| Oliver Sigwarth                                                            |
+| CIDS 225 - Web Development I                                               |
+| Assignment Three | Hobby Showcase                                          |
+| * The objective of this assignment is to demonstrate your proficiency in   |
+| * HTML and CSS by creating a personal website.                             |
+| Created: 8/6/2023                                                          |
+| Last Modified: 8/11/2023                                                   |
+----------------------------------------------------------------------------->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Assignment Three | Hobby Showcase</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../global-style.css">
+    <!------------------------------Favicons--------------------------------->
+    <!-- Favicons generated using favicon.io -->
+    <!-- Logo is my personal logo -->
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="../../global-images/favicon/apple-touch-icon.png">
+
+    <link rel="icon" type="image/png" sizes="512x512"
+          href="../../global-images/favicon/android-chrome-512x512.png">
+
+    <link rel="icon" type="image/png" sizes="192x192"
+          href="../../global-images/favicon/android-chrome-192x192.png">
+
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="../../global-images/favicon/favicon-32x32.png">
+
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="../../global-images/favicon/favicon-16x16.png">
+
+    <link rel="icon" type="image/x-icon" sizes="16x16"
+          href="../../global-images/favicon/favicon.ico">
 </head>
 <body>
-
+<nav>
+    <ul>
+        <li>
+            <a href="../../home/home.html"><h3>Home</h3></a>
+        </li>
+        <li>
+            <a href="../../hobbies/hobbies.html"><h3>Hobbies</h3></a>
+        </li>
+        <li>
+            <a href="../../about/about.html"><h3>About</h3></a>
+        </li>
+    </ul>
+</nav>
+<main>
+    <h1 id="hobby-title"><em>Independent Projects</em></h1>
+    <section>
+        <div class="left">
+            <article>
+                <p>
+                    The independent projects I pursue are programming projects
+                    that build my skills and knowledge. My goal is to build a
+                    professional portfolio to showcase my skills. I work on
+                    projects of my choosing. I’ll list a few of my projects.
+                    One is a cryptocurrency trader which is meant to automate
+                    cryptocurrency transactions with a buy low, sell high
+                    algorithm. Another is a program that analyzes the
+                    cryptocurrency market and someone’s portfolio using
+                    Python’s data science libraries like Matplotlib and
+                    pandas. A group I lead at my university is a programming
+                    team who works on open-source projects. We are called the
+                    UWRF Development Team. The team is working on a currency
+                    converter program which gives up-to-date conversions of
+                    various currencies and acts as a wallet for investing
+                    endeavors. These projects are important on their own, but
+                    their development builds my skills, and this hobby is
+                    important to me for that reason. I constantly push myself
+                    and I believe that my work speaks to that.
+                </p>
+            </article>
+        </div>
+        <div class="right">
+            <img class="hobby-img" src="images/intellij.svg" alt="IntelliJ Logo">
+            <img class="hobby-img" src="images/github-icon.png" alt="GitHub Logo">
+        </div>
+        
+    </section>
+</main>
+<a href="#hobby-title">
+    <img src="../../global-images/arrows/arrow.png" alt="To The Top Arrow"
+    id="to-top-arrow">
+</a>
+<footer>
+    <ul>
+        <li>
+            <a href="mailto:theoliverlear@gmail.com"
+               target="_blank"
+               title="(New Tab) Email">
+                <h3>Email</h3>
+            </a>
+        </li>
+        <li>
+            <a href="https://twitter.com/TheOliverLear"
+               target="_blank"
+               title="(New Tab) Twitter">
+                <h3>Twitter</h3>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/oliver-sigwarth-77948a248"
+                target="_blank"
+                title="(New Tab) LinkedIn">
+                <h3>LinkedIn</h3>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/theoliverlear"
+                target="_blank"
+                title="(New Tab) GitHub">
+                <h3>GitHub</h3>
+            </a>
+        </li>
+    </ul>
+</footer>
+<script src="../../global-script.js" defer></script>
 </body>
 </html>

@@ -1,26 +1,180 @@
+<!----------------------------------------------------------------------------
+| Oliver Sigwarth                                                            |
+| CIDS 225 - Web Development I                                               |
+| Assignment Three | Hobby Showcase                                          |
+| * The objective of this assignment is to demonstrate your proficiency in   |
+| * HTML and CSS by creating a personal website.                             |
+| Created: 8/6/2023                                                          |
+| Last Modified: 8/10/2023                                                   |
+----------------------------------------------------------------------------->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Assignment Three | Hobby Showcase</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../global-style.css">
+    <!------------------------------Favicons--------------------------------->
+    <!-- Favicons generated using favicon.io -->
+    <!-- Logo is my personal logo -->
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="../global-images/favicon/apple-touch-icon.png">
+
+    <link rel="icon" type="image/png" sizes="512x512"
+          href="../global-images/favicon/android-chrome-512x512.png">
+
+    <link rel="icon" type="image/png" sizes="192x192"
+          href="../global-images/favicon/android-chrome-192x192.png">
+
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="../global-images/favicon/favicon-32x32.png">
+
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="../global-images/favicon/favicon-16x16.png">
+
+    <link rel="icon" type="image/x-icon" sizes="16x16"
+          href="../global-images/favicon/favicon.ico">
 </head>
 <body>
-<ul class="dropdown-content">
-                <li>
-                    <a href="../hobbies/independent-projects/index.html">
-                        <h3 class="hobby">Independent Projects</h3>
+<nav>
+    <ul>
+        <li>
+            <a href="../home/home.html"><h3>Home</h3></a>
+        </li>
+        <li>
+            <a href="hobbies.html"><h3>Hobbies</h3></a>
+        </li>
+        <li>
+            <a href="../about/about.html"><h3>About</h3></a>
+        </li>
+    </ul>
+</nav>
+<main>
+<ul id="hobby-container">
+    <li>
+        <a href="../hobbies/independent-projects/index.html"
+           class="hobby-link"
+            title="Independent Projects">
+            <h3 class="hobby-title"><em>Independent Projects</em></h3>
+        </a>
+        <div class="left">
+            <article>
+                <p>
+                    My independent projects hobby is where I pursue
+                    programming endeavors to build my skills and a career
+                    portfolio. I write in many languages and have a variety of
+                    ongoing projects. It is an important hobby that I see it
+                    as a pivotal way for me to learn a strong work ethic and
+                    build my skills as a developer.
+                    Click
+                    <a href="../hobbies/independent-projects/index.html"
+                        title="Independent Projects">
+                        here
+                    </a> or the header to view information about my
+                    independent projects.
+                </p>
+            </article>
+
+        </div>
+        <div class="right">
+            <img src="images/github-icon.png" alt="GitHub Logo"
+                 class="hobby-icon">
+        </div>
+    </li>
+    <li>
+        <a href="../hobbies/codecademy/index.html"
+           class="hobby-link"
+            title="Codecademy">
+            <h3 class="hobby-title"><em>Codecademy</em></h3>
+        </a>
+        <div class="left">
+            <article>
+                <p>
+                    My Codecademy hobby is where I learn how to program in
+                    various languages using the Codecademy learning service.
+                    They provide a step-by-step process for teaching
+                    programming concepts and provide a balance between
+                    learning vs doing. It is a big part of my programming
+                    history and I continue to learn more.
+                    Click 
+                    <a href="../hobbies/codecademy/index.html"
+                        title="Codecademy">
+                        here
                     </a>
-                </li>
-                <li>
-                    <a href="../hobbies/codecademy/index.html">
-                        <h3 class="hobby">Codecademy</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="../hobbies/reading/index.html">
-                        <h3 class="hobby">Reading</h3>
-                    </a>
-                </li>
-            </ul>
+                    to learn more about my Codecademy hobby.
+                </p>
+            </article>
+        </div>
+        <div class="right">
+            <img src="images/codecademy-icon.png" alt="Codecademy Logo"
+                  class="hobby-icon">
+        </div>
+    </li>
+    <li>
+        <a href="../hobbies/reading/index.html"
+           class="hobby-link">
+            <h3 class="hobby-title"><em>Reading</em></h3>
+        </a>
+        <div class="left">
+            <article>
+                <p>
+                    Similar to my other hobbies, I have a hobby of reading to
+                    learn more about programming as well as to have a more
+                    educated view of the world – or sometimes just for
+                    leisure. I read textbooks, style books, biographies, and
+                    novels. It provides me with an educational benefit as well
+                    as a recreational activity.
+                    Click
+                    <a href="../hobbies/reading/index.html"
+                        title="Reading">
+                        here
+                    </a> to learn more about my reading hobby.
+                </p>
+            </article>
+        </div>
+        <div class="right">
+            <img src="images/book-icon.png" alt="Book Icon"
+                  class="hobby-icon">
+        </div>
+    </li>
+</ul>
+</main>
+<a href="#hobby-container">
+    <img src="../global-images/arrows/arrow.png" alt="To The Top Arrow"
+    id="to-top-arrow">
+</a>
+<footer>
+    <ul>
+        <li>
+            <a href="mailto:theoliverlear@gmail.com"
+               target="_blank"
+               title="(New Tab) Email">
+                <h3>Email</h3>
+            </a>
+        </li>
+        <li>
+            <a href="https://twitter.com/TheOliverLear"
+               target="_blank"
+               title="(New Tab) Twitter">
+                <h3>Twitter</h3>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/oliver-sigwarth-77948a248"
+                target="_blank"
+                title="(New Tab) LinkedIn">
+                <h3>LinkedIn</h3>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/theoliverlear"
+                target="_blank"
+                title="(New Tab) GitHub">
+                <h3>GitHub</h3>
+            </a>
+        </li>
+    </ul>
+</footer>
+<script src="../global-script.js" defer></script>
 </body>
 </html>

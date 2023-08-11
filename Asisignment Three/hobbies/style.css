@@ -1,0 +1,80 @@
+/*==============================================
+Oliver Sigwarth                                |
+CIDS 225 - Web Development I                   |
+Assignment Three | Hobby Showcase              |
+ * The objective of this assignment is to      |
+ * demonstrate your proficiency in HTML and    |
+ * CSS by creating a personal website.         |
+Created: 8/9/2023                              |
+Last Modified: 8/11/2023                       |
+==============================================*/
+
+/*---------------General-Content--------------*/
+:root {
+    --ivory: #eaccb3;
+    --cswhite: cornsilk;
+    --silver: #D9D9D9 ;
+    --dgray: #333333;
+    --mgray: #555555;
+    --lgray: #A8A8A8 ;
+    --blue: #141f57;
+    --lblue: #283167;
+    --bblue: #7e95ce;
+    --altshadow: #252424;
+    --altblack: #0e0e1a;
+    --pureblack: #000000;
+}
+/*-------------------Titles-------------------*/
+.hobby-title {
+    box-shadow: var(--altshadow) 0 0 0.5em;
+    border-radius: 5vw;
+    padding: 1.25vw 0;
+    margin: 2vw 2vw 3vw 2vw;
+    letter-spacing: 0.5em;
+    font-size: 2.25vw;
+}
+.hobby-title:hover {
+    background-color: var(--altblack);
+    color: var(--cswhite);
+    transition: 0.5s;
+}
+.hobby-title:not(:hover) {
+    background-color: var(--silver);
+    color: var(--blue);
+    transition: 0.5s;
+}
+/*----------------Image-Content---------------*/
+.hobby-icon{
+    width: 22vw;
+    height: 22vw;
+    margin: 0 15vw;
+    padding: 2.5vw;
+    box-shadow: 0 0 0.5em var(--altshadow);
+    border-radius: 12%;
+}
+.hobby-icon:hover {
+    box-shadow: 0 0 1em var(--altshadow);
+    transition: 0.5s;
+}
+.hobby-icon:not(:hover) {
+    box-shadow: 0 0 0.5em var(--altshadow);
+    transition: 0.5s;
+}
+/*----------------Text-Content----------------*/
+.hobby-link {
+    text-decoration: none;
+}
+#hobby-container article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2vw 3vw 2vw;
+}
+#hobby-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5vw;
+}

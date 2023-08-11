@@ -5,7 +5,7 @@
 | * The objective of this assignment is to demonstrate your proficiency in   |
 | * HTML and CSS by creating a personal website.                             |
 | Created: 8/6/2023                                                          |
-| Last Modified: 8/11/2023                                                   |
+| Last Modified: 8/10/2023                                                    |
 ----------------------------------------------------------------------------->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -39,9 +39,9 @@
 <nav>
     <ul>
         <li>
-            <a href="home.html"><h3>Home</h3></a>
+            <a href="../home/home.html"><h3>Home</h3></a>
         </li>
-        <li>
+        <li class="dropdown-container">
             <a href="../hobbies/hobbies.html"><h3>Hobbies</h3></a>
         </li>
         <li>
@@ -50,71 +50,48 @@
     </ul>
 </nav>
 <main>
-<section id="title-header">
-    <div class="left">
-        <h1 id="name-title">Oliver Sigwarth</h1>
-        <h2 id="topic-title"><em>Hobby Showcase</em></h2>
-    </div>
-    <div class="right">
-        <img id="logo-img"
-             src="../global-images/favicon/android-chrome-512x512.png"
-             alt="logo">
-    </div>
-</section>
-<section id="welcome-section">
-    <hr />
-    <article>
-        <p id="welcome-text">
-            Welcome to the hobby website by Oliver Sigwarth. This website is
-            an assignment for CIDS 225 or Web Development I. It is the “Hobby
-            Showcase” assignment. I will be presenting my hobbies, of which
-            are my independent projects, Codecademy learning, and reading.
-            The point of this assignment is to showcase my skills in HTML,
-            CSS, and JavaScript. You’ll be able to see these skills in my
-            ability to structure pages in an organized way, style the webpage
-            in an appealing aesthetic, and add functionality with scripting
-            languages. You’ll be able to navigate between here, the homepage,
-            the hobbies page containing my three hobbies, and my about me page
-            where you can learn more about me. Thank you for taking the time
-            to review my work and enjoy learning about my hobbies.
-        </p>
-    </article>
-</section>
-<section id="hobby-card-container">
-    <hr />
-    <article class="hobby-card">
-        <a href="../hobbies/independent-projects/index.html">
-            <h2>Projects</h2>
-        </a>
-        <hr />
-        <p>
-            Programming projects done on my own accord. These are career and
-            skill building activities.
-        </p>
-    </article>
-    <article class="hobby-card">
-        <a href="../hobbies/codecademy/index.html">
-            <h2>Codecademy</h2>
-        </a>
-        <hr />
-        <p>
-            A service for learning programming skills. It’s a personally and
-            professionally fulfilling endeavor.
-        </p>
-    </article>
-    <article class="hobby-card">
-        <a href="../hobbies/reading/index.html">
-            <h2>Reading</h2>
-        </a>
-        <hr />
-        <p>
-            The books range from leisure to professional enrichment. Topics
-            are biographical, programming, and web development.
-        </p>
-    </article>
-</section>
+    <section id="about-me-section">
+        <h1 id="about-me-header">About Me</h1>
+        <div class="left">
+        <article id="about-me-article">
+            <p>
+                My name is Oliver Sigwarth and I was born in River Falls,
+                Wisconsin on August 16th, 2000. My parents are glassblowing
+                artists. Their business is Sigwarth Glass. They are extremely
+                accomplished in their field. They have installations in
+                various museums, hospitals, and elsewhere.  They have received
+                numerous awards for their work. I have a sister Eva, who has
+                a master’s degree in psychology. She is currently working as a
+                case manager for Peirce County and she is on track to become a
+                full-time therapist. My partner David has a degree in
+                psychology from the University of Wisconsin – River Falls,
+                which is the place we met. He works at Roger’s Behavioral
+                Health in Woodbury, Minnesota. He works in depression recovery
+                where he assists children ages eleven to eighteen in repairing
+                their mental health. I have a very successful family and I
+                find myself in very lucky and loving company. I originally
+                went to the University of Wisconsin – River Falls for music. I
+                went to school for many years pursuing music and during that
+                time put out three albums of music. One of my songs “Walking”
+                is the theme to the Independent Artists’ Podcast. After
+                experiencing major life events like being hacked and having my
+                information exposed, I found myself oriented to a new field of
+                inquiry. Learning about the tech world made me change my focus
+                from music to computer science. I am now pursuing a degree in
+                computer science. I work very hard with my various hobbies to
+                pursue a successful life and career by building skills and
+                learning.
+
+            </p>
+        </article>
+        </div>
+        <div class="right">
+            <img id="profile-img" src="images/programming_profile_bw.jpeg" alt="profile">
+            <img id="partner-img" src="images/oliver_david.jpg" alt="my partner">
+        </div>
+    </section>
 </main>
-<a href="#title-header">
+<a href="#about-me-section">
     <img src="../global-images/arrows/arrow.png" alt="To The Top Arrow"
     id="to-top-arrow">
 </a>

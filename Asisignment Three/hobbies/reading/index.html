@@ -1,10 +1,125 @@
+<!----------------------------------------------------------------------------
+| Oliver Sigwarth                                                            |
+| CIDS 225 - Web Development I                                               |
+| Assignment Three | Hobby Showcase                                          |
+| * The objective of this assignment is to demonstrate your proficiency in   |
+| * HTML and CSS by creating a personal website.                             |
+| Created: 8/6/2023                                                          |
+| Last Modified: 8/11/2023                                                   |
+----------------------------------------------------------------------------->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Assignment Three | Hobby Showcase</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../global-style.css">
+    <!------------------------------Favicons--------------------------------->
+    <!-- Favicons generated using favicon.io -->
+    <!-- Logo is my personal logo -->
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="../../global-images/favicon/apple-touch-icon.png">
+
+    <link rel="icon" type="image/png" sizes="512x512"
+          href="../../global-images/favicon/android-chrome-512x512.png">
+
+    <link rel="icon" type="image/png" sizes="192x192"
+          href="../../global-images/favicon/android-chrome-192x192.png">
+
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="../../global-images/favicon/favicon-32x32.png">
+
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="../../global-images/favicon/favicon-16x16.png">
+
+    <link rel="icon" type="image/x-icon" sizes="16x16"
+          href="../../global-images/favicon/favicon.ico">
 </head>
 <body>
-
+<nav>
+    <ul>
+        <li>
+            <a href="../../home/home.html"><h3>Home</h3></a>
+        </li>
+        <li>
+            <a href="../../hobbies/hobbies.html"><h3>Hobbies</h3></a>
+        </li>
+        <li>
+            <a href="../../about/about.html"><h3>About</h3></a>
+        </li>
+    </ul>
+</nav>
+<main>
+    <h1 id="hobby-title"><em>Reading</em></h1>
+    <section>
+        <article>
+            <p>
+                My reading hobby is one I enjoy very much and spend a lot of
+                time partaking in. I read many books and they tend to be about
+                programming. I use these books to build my skills like my
+                other hobbies. I am a particular fan of Java and so I read
+                many books to learn more about Java – though I read about
+                other topics like functional programming and web development
+                as well. I find reading these books gives me a detailed
+                enhancement to my knowledge that online information does not
+                contextualize as well – StackOverflow for instance. I also
+                read books besides programming books. I am currently reading
+                “American Prometheus” by Kai Bird and Martin J. Sherwin. It is
+                a biography about Julius Robert Oppenheimer. I like to read
+                books like this to educate my worldview. There are some novels
+                I enjoy as well like the Thomas Harris’ Hannibal series. My
+                main goal with reading is to better myself but also enjoy the
+                content I choose to read about.
+            </p>
+        </article>
+        <div class="left">
+            <img src=images/library/c++.JPEG
+                 alt="Library"
+                id="lib-img">
+        </div>
+        <div class="right">
+            <img src=../../global-images/arrows/arrow_right.png alt="Arrow"
+            id="slide-arrow">
+        </div>
+    </section>
+</main>
+<a href="#hobby-title">
+    <img src="../../global-images/arrows/arrow.png" alt="To The Top Arrow"
+    id="to-top-arrow">
+</a>
+<footer>
+    <ul>
+        <li>
+            <a href="mailto:theoliverlear@gmail.com"
+               target="_blank"
+               title="(New Tab) Email">
+                <h3>Email</h3>
+            </a>
+        </li>
+        <li>
+            <a href="https://twitter.com/TheOliverLear"
+               target="_blank"
+               title="(New Tab) Twitter">
+                <h3>Twitter</h3>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/oliver-sigwarth-77948a248"
+                target="_blank"
+                title="(New Tab) LinkedIn">
+                <h3>LinkedIn</h3>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/theoliverlear"
+                target="_blank"
+                title="(New Tab) GitHub">
+                <h3>GitHub</h3>
+            </a>
+        </li>
+    </ul>
+</footer>
+<script src="../../global-script.js" defer></script>
+<script src="script.js" defer></script>
 </body>
 </html>
